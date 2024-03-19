@@ -1,0 +1,29 @@
+{
+  "name": "@coolcolduk/sleep",
+  "version": "1.0.0",
+  "description": "sleep function",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "clean:dist": "rm -rf dist && rm -rf tsconfig.tsbuildinfo",
+    "lint": "eslint ./src/**/*.{ts,tsx}",
+    "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}",
+    "test": "jest",
+    "test:int": "jest --testMatch **/*.spec.ts",
+    "test:unit": "jest --testMatch **/*.test.ts"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@coolcolduk/eslint-config": "latest",
+    "@coolcolduk/jest-config": "latest",
+    "@coolcolduk/ts-config": "latest",
+    "@types/lodash": "^4.17.0"
+  }
+}
