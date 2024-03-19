@@ -1,0 +1,45 @@
+{
+  "name": "midjourney",
+  "version": "1.0.0",
+  "description": "create mid journey images via txt file",
+  "main": "index.js",
+  "scripts": {
+    "browser": "/usr/bin/google-chrome-stable --remote-debugging-port=9222 --no-first-run --no-default-browser-check --user-data-dir=remote-profile",
+    "lint": "eslint ./src/**/*.{ts,tsx}",
+    "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}",
+    "mid": "ts-node -r dotenv/config ./src/midjourney.ts",
+    "copilot": "ts-node -r dotenv/config ./src/copilot.ts",
+    "etsy:download": "ts-node ./src/etsyListingDownloader.ts",
+    "test": "jest",
+    "test:int": "jest --testMatch **/*.spec.ts",
+    "test:unit": "jest --testMatch **/*.test.ts"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "@coolcolduk/prettier-config": "latest",
+    "@coolcolduk/ts-config": "latest",
+    "@coolcolduk/jest-config": "latest",
+    "@coolcolduk/eslint-config": "latest"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.2",
+    "@types/lodash": "^4.17.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@coolcolduk/eslint-config"
+    ],
+    "rules": {
+      "no-console": "off"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write --ignore-unknown"
+    ],
+    "package.json": "prettier-package-json --write"
+  },
+  "prettier": "@coolcolduk/prettier-config",
+  "author": "",
+  "license": "ISC"
+}
