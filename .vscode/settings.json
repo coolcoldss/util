@@ -14,7 +14,7 @@
   },
   "javascript.preferences.importModuleSpecifier": "project-relative",
   "typescript.preferences.importModuleSpecifier": "project-relative",
-  "prettier.configPath": "config/prettier-config/index.js",
+  "prettier.configPath": "node_modules//@coolcolduk/prettier-config/index.js",
   "prettier.prettierPath": "./node_modules/prettier",
   "eslint.workingDirectories": [
     // "packages/sleep",
