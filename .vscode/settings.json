@@ -1,0 +1,27 @@
+{
+  "files.eol": "\n",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.trimFinalNewlines": true,
+  "prettier.printWidth": 100,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.enable": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "javascript.preferences.importModuleSpecifier": "project-relative",
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "prettier.configPath": "config/prettier-config/index.js",
+  "prettier.prettierPath": "./node_modules/prettier",
+  "eslint.workingDirectories": [
+    // "packages/sleep",
+    // "packages/util",
+  ]
+  // "eslint.format.enable": true,
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true
+  // }
+}
