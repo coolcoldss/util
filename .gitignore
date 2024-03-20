@@ -20,6 +20,7 @@ coverage
 dist
 /tmp
 /data
+coverage
 
 # misc
 .DS_Store
