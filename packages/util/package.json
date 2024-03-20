@@ -1,15 +1,15 @@
 {
-  "name": "@coolcolduk/sleep",
+  "name": "@coolcolduk/util",
   "version": "1.0.0",
-  "description": "sleep function",
+  "description": "all utils combined",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build:main": "echo skip",
-    "build:package": "tsc",
+    "build:main": "tsc",
+    "build:package": "echo skip",
     "check": "tsc --noEmit",
     "clean:dist": "rm -rf dist && rm -rf tsconfig.tsbuildinfo",
     "lint": "eslint ./src/**/*.{ts,tsx}",
@@ -20,7 +20,7 @@
   },
   "types": "dist/index.d.ts",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@coolcolduk/sleep": "^1.0.0"
   },
   "devDependencies": {
     "@coolcolduk/eslint-config": "latest",
