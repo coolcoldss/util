@@ -1,5 +1,5 @@
 /**
- * Fix the size of array
+ * Fix the size of array/tube
  * @param tube
  * @param maxSize
  * @returns
