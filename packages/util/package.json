@@ -28,6 +28,7 @@
     "@coolcolduk/eslint-config": "latest",
     "@coolcolduk/jest-config": "latest",
     "@coolcolduk/ts-config": "latest",
+    "@types/async": "^3.2.24",
     "@types/lodash": "^4.17.0"
   },
   "eslintConfig": {
