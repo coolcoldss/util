@@ -1,4 +1,4 @@
-import {shallowCompare} from './compareObjectShallow';
+import {compareObjectShallow} from './compareObjectShallow';
 
 interface ITestData {
   obj1: Record<string, string | number | boolean>;
@@ -6,7 +6,7 @@ interface ITestData {
   result: boolean;
 }
 
-describe('shallowCompare', () => {
+describe('compareObjectShallow', () => {
   const testCases: Record<string, ITestData> = {
     'Should match for empty': {
       obj1: {},
@@ -41,6 +41,6 @@ describe('shallowCompare', () => {
 
   test.each(Object.keys(testCases).map((tc) => [tc, testCases[tc]]))('%s', (_title, input) => {
     const {obj1, obj2, result} = input as ITestData;
-    expect(shallowCompare(obj1, obj2)).toBe(result);
+    expect(compareObjectShallow(obj1, obj2)).toBe(result);
   });
 });

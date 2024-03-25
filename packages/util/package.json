@@ -21,6 +21,7 @@
   },
   "types": "dist/index.d.ts",
   "dependencies": {
+    "async": "^3.2.5",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
