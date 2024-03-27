@@ -1,6 +1,7 @@
 export * from './array';
 export * from './delay';
 export * from './enum';
+export * from './number';
 export * from './object';
 export * from './promise';
 export * from './retry';
