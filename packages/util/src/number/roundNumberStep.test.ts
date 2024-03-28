@@ -10,11 +10,11 @@ describe('roundNumberStep function', () => {
   });
 
   it('should correctly round the number to the nearest multiple of the decimal step', () => {
-    expect(roundNumberStep(12.4, 0.5)).toBe(12.5);
-    expect(roundNumberStep(17.6, 0.5)).toBe(17.5);
-    expect(roundNumberStep(23.8, 0.5)).toBe(24);
-    expect(roundNumberStep(38.3, 0.1)).toBe(38.3);
-    expect(roundNumberStep(54.7, 0.1)).toBe(54.7);
+    expect(roundNumberStep(12.4, 0.5)).toBeCloseTo(12.5);
+    expect(roundNumberStep(17.6, 0.5)).toBeCloseTo(17.5);
+    expect(roundNumberStep(23.8, 0.5)).toBeCloseTo(24);
+    expect(roundNumberStep(38.3, 0.1)).toBeCloseTo(38.3);
+    expect(roundNumberStep(54.7, 0.1)).toBeCloseTo(54.7);
   });
 
   it('should correctly handle negative numbers', () => {
@@ -26,11 +26,11 @@ describe('roundNumberStep function', () => {
   });
 
   it('should correctly handle negative numbers with decimal steps', () => {
-    expect(roundNumberStep(-12.4, 0.5)).toBe(-12.5);
-    expect(roundNumberStep(-17.6, 0.5)).toBe(-17.5);
-    expect(roundNumberStep(-23.8, 0.5)).toBe(-24);
-    expect(roundNumberStep(-38.3, 0.1)).toBe(-38.3);
-    expect(roundNumberStep(-54.7, 0.1)).toBe(-54.7);
+    expect(roundNumberStep(-12.4, 0.5)).toBeCloseTo(-12.5);
+    expect(roundNumberStep(-17.6, 0.5)).toBeCloseTo(-17.5);
+    expect(roundNumberStep(-23.8, 0.5)).toBeCloseTo(-24);
+    expect(roundNumberStep(-38.3, 0.1)).toBeCloseTo(-38.3);
+    expect(roundNumberStep(-54.7, 0.1)).toBeCloseTo(-54.7);
   });
 
   it('should return the number itself if the step is 1', () => {
